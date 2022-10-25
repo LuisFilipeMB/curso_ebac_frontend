@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e){
     const mensagemSucesso = `Tudo conluido valor A: <b>${valorA}</b> é menor que o valor B: <b>${valorB}</b>`;
 
     formEValido = validarValor(campoB.value)
-    if (!formEValido) {
+    if (formEValido) {
         const containerMensagemSucesso = document.querySelector('.success-message');
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display = "block";
